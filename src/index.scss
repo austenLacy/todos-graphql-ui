@@ -1,0 +1,55 @@
+@import "./variables";
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  background-color: $brand-background;
+  color: $brand-font-color;
+  overflow: hidden;
+}
+
+
+input, textarea, button, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.root {
+  height: 100%;
+  overflow: scroll;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a, p, span {
+  font-size: 14px;
+}
+
+// SHARED SHOULD BE FIRST IN LINE FOR CSS SPECIFICITY
+
+// shared components
+
+// app
+@import "components/app";
+@import "components/todos/todos";
