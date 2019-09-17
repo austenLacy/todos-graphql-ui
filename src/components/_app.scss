@@ -1,7 +1,40 @@
 .app {
   display: flex;
   height: 100%;
-  background-color: $brand-background;
-  color: $brand-primary;
+  background-color: $color-background;
+  color: $color-primary;
   flex-direction: column;
+  justify-content: center;
+
+  main.app-main {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    position: fixed;
+    overflow: hidden;
+
+    div.app-container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+
+      .app-content {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .app-page-content {
+        overflow: scroll;
+        height: 100%;
+      }
+    }
+  }
 }

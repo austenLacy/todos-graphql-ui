@@ -1,0 +1,28 @@
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 22px;
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  span.avatar-initials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    color: $color-gray-2;
+    font-size: 15px;
+    margin-right: 15px;
+    box-sizing: border-box;
+  }
+}

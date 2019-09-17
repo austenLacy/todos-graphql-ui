@@ -1,0 +1,53 @@
+.input-group {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  background: transparent;
+
+  .input {
+    background: transparent;
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &.bordered {
+      border: 1px solid $color-gray-2;
+      border-radius: 3px;
+    }
+
+    &.flat {
+      border: none;
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+
+    &.invalid {
+      border: 1px solid $color-red;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+
+  .validity-error-message {
+    font-size: 11px;
+    margin: 4px 0 0 6px;
+    color: $color-red;
+  }
+
+  .disabled {
+    opacity: 0.25;
+  }
+}

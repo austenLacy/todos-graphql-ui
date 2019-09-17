@@ -1,0 +1,42 @@
+.sidebar {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  width: $sidebar-width;
+  transition: margin-left 250ms ease-out, transform 250ms ease-out;
+  background-color: $color-white;
+  box-shadow: 0 -5px 5px -1px rgba(21,27,38,.15);
+  z-index: $sidebar-z-index;
+
+  &.sidebar-collapsed {
+    margin-left: -$sidebar-width;
+  }
+
+  .sidebar-header {
+    padding: 6px 10px 6px 20px;
+    height: $appbar-height + 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .collapse-sidebar-btn {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+
+      .arrow-left-icon {
+        height: 22px;
+        width: auto;
+      }
+    }
+  }
+
+  .sidebar-main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 20px;
+  }
+}

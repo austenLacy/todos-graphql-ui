@@ -15,8 +15,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   width: 100%;
-  background-color: $brand-background;
-  color: $brand-font-color;
+  background-color: $color-background;
+  color: $color-primary;
   overflow: hidden;
 }
 
@@ -43,13 +43,18 @@ ul, ol, li {
 }
 
 a, p, span {
-  font-size: 14px;
+  font-size: 13px;
 }
 
-// SHARED SHOULD BE FIRST IN LINE FOR CSS SPECIFICITY
-
 // shared components
+@import "components/shared/avatar/avatar";
+@import "components/shared/button/button";
+@import "components/shared/loadingSkeletons/loadingSkeletons";
+@import "components/shared/textArea/textArea";
+@import "components/shared/textInput/textInput";
 
 // app
 @import "components/app";
+@import "components/appBar/appBar";
+@import "components/sidebar/sidebar";
 @import "components/todos/todos";

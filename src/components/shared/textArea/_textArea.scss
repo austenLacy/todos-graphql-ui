@@ -1,0 +1,35 @@
+.textarea-group {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  background: transparent;
+
+  .textarea {
+    resize: none;
+    background: transparent;
+    width: 100%;
+    font-size: 15px;
+    padding: 9px;
+
+    &.bordered {
+      border: 1px solid $color-gray-2;
+      border-radius: 6px;
+    }
+
+    &.flat {
+      border: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+
+  .disabled {
+    opacity: 0.25;
+  }
+}

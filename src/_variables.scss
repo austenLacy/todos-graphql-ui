@@ -1,12 +1,31 @@
-$brand-background: #F6F9FA;
-$brand-font-color: #212020;
-$brand-primary: #14283D;
-$brand-secondary: #134AC1;
-$brand-yellow: #FFB830;
-$brand-green: rgb(62, 187, 133);
-$brand-red: #f6605f;
-$brand-blue: rgb(44, 31, 155);
-$brand-orange: #F3A43A;
-$brand-yellow: #F0B725;
-$brand-purple: rgb(119, 105, 233);
-$brand-light-purple: rgba(119, 105, 233, 0.2);
+$color-primary: #04202C;
+$color-secondary: #304044;
+$color-tertiary: #5B7065;
+$color-accent: #C9D1C8;
+$color-background: #FEFEFE;
+
+$color-yellow: #FFB830;
+$color-green: rgb(62, 187, 133);
+$color-red: #f6605f;
+$color-blue: rgb(44, 31, 155);
+
+// grays
+$color-white: #FCFCFC;
+$color-gray-1: #FCFCFF;
+$color-gray-2: #f2f4f5;
+$color-gray-3: #D3D0CB;
+$color-gray-4: #E7E7E6;
+$color-gray-5: #F7F7F7;
+$color-gray-6: #B3B3B3;
+
+// dimensions
+$appbar-height: 52px;
+$sidebar-width: 230px;
+
+// z-indexes
+$appbar-z-index: 10;
+$sidebar-z-index: 11;
+
+// box shadows
+$box-1: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+$box-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
